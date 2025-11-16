@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>نتائج الطلاب - مؤسسة عائشة بخيت التعليمية الخاصة</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; text-align: right; padding: 20px; }
+        h1 { text-align: center; }
+        #level, #levelLabel, #searchForm, #results { display: none; margin-top: 20px; }
+        input, select { padding: 5px; margin: 5px 0; }
+        button { padding: 5px 10px; margin-top: 10px; }
+        .success { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="شعار المدرسة" style="display:block; margin:auto; width:150px;">
+    <h1>مؤسسة عائشة بخيت التعليمية الخاصة</h1>
+
+    <label for="stage">اختر المرحلة:</label>
+    <select id="stage">
+        <option value="">-- اختر المرحلة --</option>
+        <option value="ابتدائي">ابتدائي</option>
+        <option value="متوسط">متوسط</option>
+        <option value="ثانوي">ثانوي</option>
+    </select>
+
+    <label id="levelLabel" for="level">اختر الصف:</label>
+    <select id="level">
+        <option value="">-- اختر الصف --</option>
+        <option value="الأول الثانوي">الأول الثانوي</option>
+        <option value="الثالث الثانوي">الثالث الثانوي</option>
+    </select>
+
+    <div id="searchForm">
+        <h2>بحث عن الطالب</h2>
+        <input type="text" id="studentName" placeholder="الاسم الثلاثي">
+        <input type="text" id="motherName" placeholder="اسم الوالدة الثلاثي">
+        <button id="searchBtn">بحث</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
